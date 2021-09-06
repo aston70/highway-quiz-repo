@@ -130,12 +130,15 @@ Public Class QuizDL
 
             Dim sql_q = <string><![CDATA[
                 select count(*) as quizCount
-                from dbo.UserQuiz
-                where UserId = 1
+                from dbo.UserQuiz uq
+	                inner join dbo.[User] u
+		                on uq.UserId = u.UserId
+                where u.EmailAddress = @emailAddress
             ]]></string>.Value
 
             Using cmd As New SqlCommand(sql_q, conn)
                 cmd.CommandType = CommandType.Text
+                cmd.Parameters.AddWithValue("@emailAddress", user.EmailAddress)
                 Return Convert.ToInt32(cmd.ExecuteScalar()) > 0
             End Using
 
