@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Quiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var data = ViewBag.Message;
+}
+
+<div class="completedQuiz">
+    <h2>Highway Quiz - Completed</h2>
+    <div>
+        <p>Thank you <span class="firstname">@(data.Quiz.User.FirstName + ' ' + data.Quiz.User.LastName)</span> for completing the quiz!</p>
+        @if (@data.Quiz.EmailSent)
+        { 
+            <p>A confirmation email was sent to: @(data.Quiz.User.EmailAddress)</p>
+        }
+        <p>Your score: <span class="score">@data.Quiz.Score</span></p>
+        <p>Your grade: <span class="score">@data.Quiz.Grade</span></p>
+    </div>
+    <div>
+        <!--  Questions -->
+        @foreach (var detail in @data.Quiz.Details)
+        {
+            <div class="question">
+                <div class="questionHeader">
+                    <h3>Question: @detail.QuestionNumber</h3>
+                    <span>@detail.OrigQuestionDescr</span>
+                </div>
+                
+                @if (@detail.SelectedAnswerId == @detail.CorrectAnswerId)
+                {
+                    <div class="answer correctAnswer">
+                        <span>Correct!</span>
+                        <span>@detail.SelectedAnswerDescr</span>
+                    </div>
+                }
+                else
+                {
+                    <div class="answer incorrectAnswer">
+                        <span>Your Answer:</span>
+                        <span>@detail.SelectedAnswerDescr</span>
+                    </div>
+                    <div class="answer">
+                        <span>Correct Answer:</span>
+                        <span>@detail.CorrectAnswerDescr</span>
+                    </div>
+                }
+            </div>
+        }
+        <div class="completedDate">
+            Quiz completed: @data.Quiz.DateCompleted
+        </div>
+    </div>
+</div>

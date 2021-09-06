@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighwayQuiz.BL", "HighwayQuiz.BL\HighwayQuiz.BL.csproj", "{661F9593-A537-477D-BA79-139A91BF17A2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HighwayQuiz.DL", "HighwayQuiz.DL\HighwayQuiz.DL.vbproj", "{57960AE6-CC22-4655-A0F3-50D16D6B8F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighwayQuiz.DTO", "HighwayQuiz.DTO\HighwayQuiz.DTO.csproj", "{614B7403-B0E0-4E53-8B43-B4185DD890C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighwayQuiz.UnitTest", "HighwayQuiz.UnitTest\HighwayQuiz.UnitTest.csproj", "{E2698F50-0E53-465B-B067-3940405B3C67}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HighwayQuiz.Batch.UI", "HighwayQuiz.Batch.UI\HighwayQuiz.Batch.UI.vbproj", "{44138F6E-51A6-46C8-B879-FC9F64986451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighwayQuiz.Web.UI", "HighwayQuiz.Web.UI\HighwayQuiz.Web.UI.csproj", "{41886916-9B35-4D6D-8491-FD9CDBC3F982}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{F58103C8-DE98-4633-B7FB-3C1FB3141A70}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\Readme.txt = Documents\Readme.txt
+		Documents\Software Developer Coding Exercise v1.0.docx = Documents\Software Developer Coding Exercise v1.0.docx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{661F9593-A537-477D-BA79-139A91BF17A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661F9593-A537-477D-BA79-139A91BF17A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661F9593-A537-477D-BA79-139A91BF17A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661F9593-A537-477D-BA79-139A91BF17A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57960AE6-CC22-4655-A0F3-50D16D6B8F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57960AE6-CC22-4655-A0F3-50D16D6B8F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57960AE6-CC22-4655-A0F3-50D16D6B8F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57960AE6-CC22-4655-A0F3-50D16D6B8F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614B7403-B0E0-4E53-8B43-B4185DD890C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614B7403-B0E0-4E53-8B43-B4185DD890C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614B7403-B0E0-4E53-8B43-B4185DD890C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614B7403-B0E0-4E53-8B43-B4185DD890C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2698F50-0E53-465B-B067-3940405B3C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2698F50-0E53-465B-B067-3940405B3C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2698F50-0E53-465B-B067-3940405B3C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2698F50-0E53-465B-B067-3940405B3C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44138F6E-51A6-46C8-B879-FC9F64986451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44138F6E-51A6-46C8-B879-FC9F64986451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44138F6E-51A6-46C8-B879-FC9F64986451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44138F6E-51A6-46C8-B879-FC9F64986451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41886916-9B35-4D6D-8491-FD9CDBC3F982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41886916-9B35-4D6D-8491-FD9CDBC3F982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41886916-9B35-4D6D-8491-FD9CDBC3F982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41886916-9B35-4D6D-8491-FD9CDBC3F982}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6B1A221-07CF-491A-8D44-432289D5C3DD}
+	EndGlobalSection
+EndGlobal

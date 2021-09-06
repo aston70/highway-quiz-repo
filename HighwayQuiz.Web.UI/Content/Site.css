@@ -1,0 +1,130 @@
+﻿/* Phone */
+@media only screen and (max-width:480px) {
+    label.hqRadio input[type=radio] {
+        transform: scale(2.0) !important;
+        margin-bottom: 12px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    label.hqRadio input[type=radio] {
+        transform: scale(1.5) !important;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width:769px) {
+    label.hqRadio input[type=radio] {
+        transform: scale(1.2) !important;
+    }
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: arial;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Email - Start Quiz */
+div.email {
+    min-width: 320px;
+}
+
+div.email p {
+    text-align: center;
+}
+
+
+/* Quiz */
+div.questions div, div.questions label {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+div.question input[type='radio'] {
+    margin-right: 9px;
+}
+
+div.question {
+    padding: 10px;
+    margin-bottom: 7px;
+    max-width: 700px;
+}
+
+div.alert span {
+    display: block;
+}
+
+/* Completed Quiz */
+div.completedQuiz p {
+    margin: 7px;
+}
+
+div.completedQuiz span.score {
+    font-weight: bold;
+}
+
+
+div.questionHeader {
+    background-color: #DDDDDD;
+    border: solid silver 1px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 7px;
+}
+
+    div.questionHeader h3 {
+        margin: 10px;
+    }
+
+div.answer {
+    padding: 2px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+div.incorrectAnswer {
+    background-color: #FFB3B3;
+}
+
+div.correctAnswer {
+    background-color: #C0F85D;
+}
+
+div.answer span:nth-child(2) {
+    padding-left: 7px;
+    font-weight: bold;
+}
+
+div.answer span:nth-child(1) {
+    padding-left: 4px !important;
+}
+
+div.completedDate {
+    font-size: smaller;
+    margin-top: 10px;
+}

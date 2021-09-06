@@ -1,0 +1,18 @@
+﻿After setting up the database it's possible the first time running the application
+that you recieve the following error page...
+
+Error.
+An error occurred while processing your request
+
+In the HighwayQuiz.Web.UI root folder, the NLog file HighwayQuiz.log.txt should 
+show the exception message.
+
+You'll likely see a message like this:
+Login failed for user 'testyuser2'.
+
+In SSMS, make sure testyuser2 has dbo membership.
+
+If that still doesn't work, follow these instructions to reset the user login password.
+It likely didn't get set correctly.
+
+https://support.hawkridgesys.com/hc/en-us/articles/360033470232-How-To-Use-SQL-Server-Management-Studio-SSMS-To-Reset-Your-SQL-Password

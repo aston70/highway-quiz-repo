@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section scripts {
+    @Scripts.Render("~/bundles/site-index")
+}
+<div class="jumbotron email">
+@{ 
+        //var frmHtmlAttributes = new { id = "frmUser", onsubmit = "return validateUserForm(event)"};
+    }
+
+    @using (Html.BeginForm("Quiz", "Quiz", FormMethod.Post, 
+        new { id = "frmUser", onsubmit = "return validateUserForm(event)" }))
+    {
+
+        string errorMessage = TempData["ErrorMessage"] as string;
+        var user = TempData["User"] as HighwayQuiz.DTO.UserDTO;
+        if (!String.IsNullOrEmpty(errorMessage))
+        {
+            <div id="divErrMsg" class="alert alert-danger">
+                <span>@errorMessage</span>
+            </div>
+        }
+        else
+        {
+            <div id="divErrMsg" class="alert alert-danger" style="display:none;" ></div>
+        }
+
+        <p class="lead">
+            <label for="tbx_emailAddress">Email</label>
+            <input id="tbx_emailAddress" name="emailAddress" type="email" maxlength="250"
+                   class="required" value="@(user !=null ? @user.EmailAddress : "")" />
+        </p>
+        <p class="lead">
+            <label for="tbx_firstName">First Name</label>
+            <input id="tbx_firstName" name="firstName" type="text" maxlength="250"
+                   class="required" value="@(user !=null ? @user.FirstName : "")" />
+        </p>
+        <p class="lead">
+            <label for="tbx_lastName">Last Name</label>
+            <input id="tbx_lastName" name="lastName" type="text" maxlength="250"
+                   class="required" value="@(user !=null ? @user.LastName : "")" />
+        </p>
+
+        <p><input id="btn_submit" type="submit" class="btn btn-primary btn-lg" value="Begin Quiz" /></p>
+    }
+
+</div>
