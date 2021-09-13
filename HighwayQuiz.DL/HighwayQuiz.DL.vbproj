@@ -147,11 +147,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database Setup\mdf\HighQuiz.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Database Setup\mdf\HighQuiz.mdf" />
     <Content Include="Database Setup\mdf\HighQuiz_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>HighQuiz.mdf</DependentUpon>
     </Content>
     <Content Include="Database Setup\scripts\Create Database.sql" />
